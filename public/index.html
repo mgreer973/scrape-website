@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+    body{
+      background-color: #F2F6D0
+    }
+/*    #wrapper{
+      width:960px;
+      margin: 0 auto;
+      padding-top: 5%;
+    }
+    #articles{
+      width:60%;
+      height:700px;
+      display:inline-block;
+      overflow: auto;
+    }
+    #notes{
+      width:30%;
+      float:right;
+    } */
+    #scrapeBtn {
+      margin-top: 40px;
+    }
+    #loadBtn {
+      margin-top: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      padding-bottom: 40px;
+    }
+    textarea, input{
+      display:block;
+      width:100%;
+      background-color: #FCF5C7;
+    }
+    input{
+      height:36px;
+      font-size: 24px;
+    }
+    textarea{
+      height:200px;
+      font-size: 18px;
+    } 
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2">
+        <button id="scrapeBtn">Scrape</button>
+      </div>
+      <div class="col-sm-2">
+        <button id="loadBtn">Load Articles</button>
+      </div>
+    </div>
+    <div class="row">
+      <h1>Note scrape for NHL</h1>
+    </div>    
+    <div class="row">
+      <div id="notes" class="col-sm-4"></div>
+      <div id="articles" class="col-sm-4"></div>
+      <div id="delNote" class="col-sm-4"></div>
+    </div>
+  </div>
+<!--  <div id="wrapper">
+    <h1>Note Scraper</h1>
+    <h2><i>If you can do this...the homework should be no problem.</i></h2>
+    <div id="articles"></div>
+    <div id="notes"></div>
+  </div> -->
+  <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
